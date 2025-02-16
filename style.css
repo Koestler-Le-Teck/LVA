@@ -15,8 +15,11 @@ a{
   z-index: 9999;  /* Cela garantit que la navbar est toujours au-dessus du contenu */
 }
 
-
 /*BODY*/
+
+body {
+  padding-top: 80px; /* Ajustez cette valeur selon la hauteur de votre navbar */
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
