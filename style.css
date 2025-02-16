@@ -1,14 +1,3 @@
-/*Header Titre de la NAVBAR*/
-
-.header {
-  display: flex;
-  justify-content: flex-start;  /* Aligne le contenu à gauche */
-}
-
-.header h1 {
-  margin-left: 20px;  /* Si nécessaire, ajustez pour plus d'espace */
-}
-
 /*TA NAVBAR*/
 .navbar{
     background: #3b0947;
