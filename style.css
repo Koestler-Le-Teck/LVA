@@ -17,6 +17,10 @@ a{
 
 /*BODY*/
 
+.container.my-4 {
+  padding-top: 80px; /* Ajustez en fonction de la hauteur de votre navbar */
+}
+
 body {
   padding-top: 80px; /* Ajustez cette valeur selon la hauteur de votre navbar */
 }
