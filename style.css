@@ -1,116 +1,98 @@
-/*TA NAVBAR*/
-.navbar{
-    background: #3b0947;
-}
-a{
-    font-family: "Montserrat";
-    font: larger;
-}
-
+/* NAVBAR */
 .navbar {
+  background: #3b0947;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;  /* Cela garantit que la navbar est toujours au-dessus du contenu */
+  z-index: 9999; /* Cela garantit que la navbar est toujours au-dessus du contenu */
 }
 
-/*BODY*/
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-top: 80px; /* Ajustez en fonction de la hauteur de votre navbar */
+}
 
 .container.my-4 {
   padding-top: 80px; /* Ajustez en fonction de la hauteur de votre navbar */
 }
 
-body {
-  padding-top: 80px; /* Ajustez cette valeur selon la hauteur de votre navbar */
+/* RESPONSIVE */
+html {
+  box-sizing: border-box;
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
-  
-  html {
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* FONT */
+a {
+  font-family: "Montserrat";
+  font-size: larger; /* Utilisation de font-size au lieu de font */
+}
+
+/* LAYOUT */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+/* BUTTON */
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1080px) {
   .column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  
-  .card {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-  }
-  
-  .about-section {
-    padding: 8px;
-    text-align: center;
-    background-color:blueviolet;
-    color: white;
-  }
-  
-  .container {
-    padding: 0 16px;
-  
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
     width: 100%;
+    display: block;
   }
-  
-  .button:hover {
-    background-color: #555;
-  }
-  
-  @media screen and (max-width: 1080px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
+}
 
 audio {
   width: 50%;
 }
 
-/* #extraits {
-  background-image: url(./Images/LogoChandailLVA.jfif);
-  background-repeat: no-repeat;
-  width:600px;
-  height: 200px;
-}  */
-
+/* IMAGE */
 #imgExtraits {
-  width:496px;
+  width: 496px;
   height: 372px;
-
 }
 
+/* FLEX AND FOOTER */
 html, body {
   height: 100%;
   margin: 0;
@@ -118,11 +100,11 @@ html, body {
   flex-direction: column;
 }
 
-.footer {
-  margin-top: auto;  /* Cette propriété pousse le footer vers le bas */
+.container {
+  flex-grow: 1;
 }
 
-/*FOOTER*/
-.footer{
-    background: blueviolet;
+.footer {
+  background: blueviolet;
+  margin-top: auto; /* Pousse le footer vers le bas */
 }
